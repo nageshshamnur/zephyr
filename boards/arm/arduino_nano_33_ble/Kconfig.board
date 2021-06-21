@@ -18,3 +18,7 @@ config BOARD_ARDUINO_NANO_33_BLE_EN_USB_CONSOLE
 config BOARD_ARDUINO_NANO_33_BLE_INIT_SENSORS
 	bool "Initializes the internal I2C sensors on the board"
 	depends on BOARD_ARDUINO_NANO_33_BLE
+
+config BOARD_ARDUINO_NANO_33_BLE_INIT_USB_CDC_ACM
+	bool "enable USB CDC_ACM interface after flashing"
+	depends on BOARD_ARDUINO_NANO_33_BLE
